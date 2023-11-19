@@ -4,7 +4,7 @@ numpy==1.21.6
 opencv-python==4.8.1.78
 packaging==23.2
 paramiko==3.3.1
-Pillow==10.0.1
+Pillow==9.5.0
 py2exe==0.13.0.1
 pycparser==2.21
 pyelftools==0.30
