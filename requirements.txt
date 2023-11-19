@@ -1,5 +1,5 @@
 
-Flask==23.3.1
+Flask==3.0.0
 numpy==1.26.0
 opencv-python==4.8.1.78
 packaging==23.2
