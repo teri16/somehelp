@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>just try</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 18px; /* You can increase this value to make the text larger */
+        }
+        form {
+            border: 3px solid #ccc; /* Increased border size here */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background: #fff;
+            width: 50%; /* You can adjust this value to make the form wider */
+            max-width: 500px; /* You can adjust this to set a max-width for the form */
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type=file], input[type=text], button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #008CBA; /* Change button color here */
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #005f73; /* Change button hover color here */
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="image">Upload image:</label>
+            <input type="file" name="image" accept="image/png">
+        </div>
+        <div>
+            <label for="message">Enter message:</label>
+            <input type="text" name="message">
+        </div>
+        <div>
+            <button type="submit">Go</button>
+        </div>
+    </form>
+</body>
+</html>
